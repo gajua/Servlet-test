@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float를 이용한 홈페이지 레이아웃</title>
+    <style>
+      #container {
+        width: 100%;
+        border: 1px solid blue;
+      }
+      
+      header {
+        height: 80px;
+        background: yellow;
+      }
+      nav {
+        height: 30px;
+        background: green;
+      }
+      nav > ul > li {
+        display: inline-block;
+        width: 100px;
+      }
+
+      section, aside {
+        float: left;
+      }
+
+      section {
+        background: gold;
+        width: 80%;
+        height: 500px;
+      }
+
+      aside {
+        background: blue;
+        width: 20%;
+        height: 500px;
+      }
+
+      footer {
+        background: orange;
+        height: 70px;
+        clear: both;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <header>머리글부분</header>
+      <nav>
+        <ul>
+          <li>메뉴1</li>
+          <li>메뉴2</li>
+          <li>메뉴3</li>
+        </ul>
+      </nav>
+      <section>
+        <article>내용</article>
+      </section>
+      <aside>좌우메누</aside>
+      <footer>바닥글</footer>
+    </div>
+  </body>
+</html>
